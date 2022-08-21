@@ -1,0 +1,139 @@
+.pageColor{
+    color: 	#0404B4;
+    font-size:20px;
+    font-weight:inherit;
+}
+
+.logout{
+    color: rgb(0, 102, 255); 
+    font-size: small; 
+    float: right;
+    background-color: white;
+    border: none;
+    margin-top: 8px;
+}
+
+div{
+    vertical-align:top
+}
+
+
+.outLook{
+    border: 1px;
+    border-color: gainsboro;
+    border-style: solid;
+    height: auto;
+    width: auto;
+    margin: 5px;
+
+}
+
+.in{
+    display: inline-block;
+}
+
+.l1{
+    color: 	#0404B4;
+    font-size:30px;
+    font-weight: normal;
+    width: auto;
+}
+
+.di1{
+    background-color: gainsboro;
+    width: 92%;
+    height: 25px;
+    align-content: center;
+
+}
+
+.di2{
+    width: 8%;
+    height: 25px;
+    background-color: #10C59E; 
+}
+
+.im2{
+    color: white;
+}
+
+.la2{
+    color: white;
+    font-size: small;
+}
+
+
+.la1{
+    color: 	#0404B4; 
+}
+
+.li{
+    height:50px;
+    width: auto;
+}
+
+.line1{
+    width: 52%;
+}
+
+.line2{
+    width: 15%;
+}
+
+.line3{
+    width: 11%;
+
+}
+
+.line4{
+    width: 22%;
+}
+
+th{
+    font-weight:lighter;
+    font-size: small;
+    text-align: left;
+    border-bottom: 2px solid gray;   
+    height: 50px;
+}
+
+td{
+    height: 50px;
+    border-bottom: 1px solid gainsboro;
+}
+
+
+.l3{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.gray{
+    border:none; 
+    background-color:white;
+}
+
+.grayN{
+    border:none; 
+    background-color:white;
+    width: 30px;
+    height: 30px;
+}
+
+.grayN:hover{
+    background-color: gainsboro; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

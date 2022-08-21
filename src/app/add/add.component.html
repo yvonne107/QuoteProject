@@ -1,0 +1,50 @@
+<form class="form" #form="ngForm" (ngSubmit)="submit(form.value)">
+    <div class="formTitle">
+        <h3 style="color: white;">Add New Query</h3>
+    </div>
+
+    <div class="block form-control">
+        <label class="labe" for="QuoteID" >Quote ID</label>
+        <input class="cent" type="text" #QuoteID="ngModel" ngModel [(ngModel)]="addService.quoteI.QuoteId" name="QuoteID" placeholder="0" required>
+    </div>
+
+    <div class="block form-control">
+        <label class="labe" for="QuoteType">Quote Type</label>
+        <select required name="QuoteType" name="amount" (change)="showType($event)" #QuoteType="ngModel" ngModel [(ngModel)]="addService.quoteI.QuoteType">
+            <option value="Auto" [defaultSelected]>Auto</option>
+            <option value="Fan">Fan</option>
+            <option value="House">House</option>
+            <option value="Life">Life</option>
+            <option value="Day">Day</option>
+        </select>
+    </div>
+    
+    <div class="block form-control">
+        <label class="labe" for="Sales">Sales</label>
+        <input class="cent" type="text" name="Sales" #Sales="ngModel" ngModel [(ngModel)]="addService.quoteI.SalesPerson" required>
+    </div>
+    
+    <div class="block form-control">
+        <label class="labe" for="Premium">Premium</label>
+        <input class="cent" type="text" name="Premium" #Premium="ngModel" ngModel [(ngModel)]="addService.quoteI.PremiumAmount" required>
+    </div>
+    
+    <div class="block form-control" ngModelGroup="DueDate">
+        <label class="labe" for="DueDate">Due Date</label>
+            <input  style="width:120px; text-align: center;" type="date" ngModel name="DueDate" #DueDate="ngModel" [(ngModel)]="addService.quoteI.DueDate" required >
+            <input  style="width: 30px;"  type="number" name="hour" ngModel oninput="if(value>12)value=12; if(value<0)value=0" required>
+            <input  style="width: 30px;"  type="number" name="min" ngModel oninput="if(value>60)value=59; if(value<0)value=0" required>
+            <input style="width: 20px;" type="text" placeholder="AM">
+    </div>
+    
+    <div class="block form-control">
+        <label class="labe" for="Description">Description</label>
+        <textarea name="Description" rows="2" cols="80" #Description="ngModel" ngModel [(ngModel)]="addService.quoteI.Description" required></textarea>
+    </div>
+    <div style="height:15px"></div>
+
+    <div style="float: right;" class="form-control">
+        <button class="butn" type="submit">Submit</button>
+        <button class="butn" (click)="cancel()" type="button">Cancel</button>
+    </div>
+</form>

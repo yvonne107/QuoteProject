@@ -1,0 +1,80 @@
+
+.form1{
+    width: auto;
+    height: auto;
+
+}
+
+.formTitle{
+    background-color: 	#0404B4; 
+    height: 30px;
+    width: 825px;
+    margin-bottom: 10px;
+}
+
+.cent{
+    vertical-align: top;
+    width: 300px;
+}
+
+.block{   
+    display: block;
+    margin:10px 0;
+}
+.center{
+    text-align: center;
+}
+
+textarea{
+    vertical-align: top;
+}
+
+.labe{
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    margin-left: 30px;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.butn{
+    border: none; 
+    background-color:white; 
+    float: right; 
+    margin-right: 15px;
+}
+
+
+
+
+.deb1{
+    border: none;
+    background-color: white;
+    height: 35px;
+    width: 60px;
+    float: right;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.deb2{
+    background-color: 	#0404B4; 
+    color: white;
+    border: none;
+    height: 35px;
+    width: 60px;
+    float: right;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+.divD{
+    width: 400px;
+    height: 130px;
+    border: 2px green;
+    border-style: solid;
+    padding: 20px;
+}

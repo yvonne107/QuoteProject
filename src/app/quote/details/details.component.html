@@ -1,0 +1,50 @@
+<div class="title">
+    <span class="pageColor">Task Management System</span>
+    <button class="logout" [routerLink]="'/home/'" (click)="logout()" >Log Out</button>
+</div>
+<p></p>
+<br>
+
+<div class="show">
+
+    <div class="bl1">
+        <img style="width: 100%;" src="./assets/house.png" alt="">
+    </div>
+
+    <p></p><br>
+    <p></p>
+    
+    <table class="">
+        <!--*ngFor="let qu of serviceD.list"-->
+        <tr class="block" >
+            <div class="lab">
+                <label class="labz" for="quoteId">Quote ID</label>
+                {{que.QuoteId|number}}
+            </div>
+            <div class="lab">
+                <label class="labz" for="quoteType">Quote Type</label>
+                {{que.QuoteType|upper}}
+            </div>
+
+            <div class="lab">
+                <label class="labz" for="sales">Sales Person</label>
+                {{que.SalesPerson|upper}}
+            </div>
+            <div class="lab">
+                <label class="labz" for="premium">Premium Amount</label>
+                {{que.PremiumAmount|currency:'CAD':'symbol-narrow'}}
+            </div>
+                
+            <div class="lab">
+                <label class="labz" for="dueDate">Due Date</label>
+                {{que.DueDate|date:'M/d/y'}}
+            </div>
+
+            <div class="labD">
+                <label class="labz" for="description">Description</label>
+                {{que.Description|upper}}
+            </div>
+        </tr>
+    </table>   
+</div>
+

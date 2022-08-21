@@ -1,0 +1,66 @@
+.block{
+    width: auto;
+    display: block;
+    margin:5px 0;
+}
+.center{
+    text-align: center;
+}
+
+label{
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    text-align: left;
+    color: 	#0404B4;
+    border: 0px;
+    font-weight: bold;
+}
+
+.inp{
+    margin:10px;
+    vertical-align: top;
+}
+
+.pageColor{
+    color: 	#0404B4;
+    font-size:20px;
+    font-weight:inherit;
+}
+
+.logout{
+    color: rgb(0, 102, 255); 
+    font-size: small; 
+    float: right;
+    background-color: white;
+    border: none;
+    margin-top: 8px;
+}
+
+.show{
+    margin-left: 20%;
+}
+
+.lab{
+    font-weight:lighter;
+    font-size:medium;
+    width: 500px;  
+}
+
+.labD{
+    font-weight:lighter;
+    font-size:medium;
+   
+}
+
+.labz{
+    width: 400px;
+    
+}
+
+.bl1{
+    height: 150px;
+    width: 250px;
+    margin-left: 20px;
+
+}

@@ -1,0 +1,70 @@
+.pageColor{
+    color: 	#0404B4;
+    font-size:20px;
+    font-weight:inherit;
+}
+
+.b1{
+    background-color: 	#0404B4;
+    color: white;
+    width: 250px;
+    height: 30px;
+    border: 2px;
+    border-style: solid;
+    border-color: 	#0404B4;
+    font-weight: bold;
+}
+
+.b2{
+    background-color: white;
+    color: 	#0404B4;
+    width: 250px;
+    height: 30px;
+    border: 2px;
+    border-style: solid;
+    border-color:  	#0404B4;
+    font-weight: bold;
+}
+
+.d1{
+    top:25%;
+    height: auto;
+    width: auto;
+}
+
+.block{
+    display: block;
+    margin: 15px;
+    width: 500px; 
+}
+
+.i1{
+    height: 20px;
+    width: 495px;
+    border-style:none;
+    border-bottom: 1px solid gray;
+}
+
+.b3{
+    height: 30px;
+    background-color: gainsboro;
+    color: gray;
+    border-style: solid;
+    border-color: gainsboro;
+    font-size: small;
+    border-radius: 5px;
+}
+
+.f1{
+    height: auto;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px;
+    border-style: solid;
+    border-color: gainsboro;
+}

@@ -1,0 +1,22 @@
+.in{
+    display: inline-block;
+}
+
+.b1{
+    background-color: 	#0404B4;
+    color: white;
+    font-weight: bold;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.b2{
+    background-color: white;
+    color: 	black;
+    font-weight: bold;
+    border: none;
+    width: 50px;
+    height: 30px;
+}

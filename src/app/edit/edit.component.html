@@ -1,0 +1,51 @@
+<form class="form1" #form="ngForm" (ngSubmit)="submit(form)" >
+    <div class="formTitle">
+        <h3 mat-dialog-title style="color: white;">Update Quote</h3>
+    </div>
+
+    <div class="block form-control">
+        <label class="labe" for="QuoteID" >Quote ID</label>
+        <input class="cent" type="text" #QuoteId="ngModel" ngModel [(ngModel)]="editService.quoteI.QuoteId" name="QuoteId" placeholder="0" readonly required>
+    </div>
+
+    <div class="block form-control">
+        <label class="labe" for="QuoteType">Quote Type</label>
+        <select required name="QuoteType" name="QuoteType" #QuoteType="ngModel" ngModel [(ngModel)]="editService.quoteI.QuoteType">
+            <option value="Auto" [defaultSelected]>Auto</option>
+            <option value="Fan">Fan</option>
+            <option value="House">House</option>
+            <option value="Life">Life</option>
+            <option value="Day">Day</option>
+        </select>
+    </div>
+    
+    <div class="block form-control">
+        <label class="labe" for="SalesPerson">Sales</label>
+        <input class="cent" type="text" name="SalesPerson" #SalesPerson="ngModel" ngModel [(ngModel)]="editService.quoteI.SalesPerson" required>
+    </div>
+    
+    <div class="block form-control">
+        <label class="labe" for="PremiumAmount">Premium</label>
+        <input class="cent" type="text" name="PremiumAmount" #PremiumAmount="ngModel" ngModel [ngModel]="editService.quoteI.PremiumAmount" required>
+    </div>
+    
+    <div class="block form-control" >
+        <label class="labe" for="DueDate">Due Date</label>
+        <!--(change)="$event.target.valueAsDate"-->
+        <input style="width: 120px;" type="date" ngModel name="DueDate" #DueDate="ngModel" [ngModel]="editService.quoteI.DueDate | date: 'yyyy-MM-dd'" required >
+        <input style="width: 30px;" type="number" name="hour"  oninput="if(value>12)value=12; if(value<0)value=0" required>
+        <input style="width: 30px;" type="number" name="min" oninput="if(value>60)value=59; if(value<0)value=0" required>
+        <input style="width: 20px;" type="text" name="am"  placeholder="AM">
+    </div>
+    
+    <div class="block form-control">
+        <label class="labe" for="Description">Description</label>
+        <textarea name="Description" rows="2" cols="80" #Description="ngModel" ngModel [(ngModel)]="editService.quoteI.Description" required></textarea>
+    </div>
+    <div style="height:15px"></div>
+
+    <div style="float: right;" class="form-control">
+        <button class="butn" type="submit">Submit</button>
+        <button class="butn" (click)="cancel()" type="button">Cancel</button>
+    </div>
+</form>
