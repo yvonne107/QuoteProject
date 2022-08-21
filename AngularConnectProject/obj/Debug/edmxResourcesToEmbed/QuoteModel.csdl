@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FullStackModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Quote">
+    <Key>
+      <PropertyRef Name="QuoteId" />
+    </Key>
+    <Property Name="QuoteId" Type="Int32" Nullable="false" />
+    <Property Name="QuoteType" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SalesPerson" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PremiumAmount" Type="Int32" />
+    <Property Name="DueDate" Type="DateTime" Precision="0" />
+    <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ConfirmedPassword" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="FullStackEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Quotes" EntityType="Self.Quote" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+  </EntityContainer>
+</Schema>

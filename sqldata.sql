@@ -1,0 +1,1 @@
+﻿INSERT INTO Quotes VALUES (1, "House", "This is house insurance", "John", 1/1/2013, "116");

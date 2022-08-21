@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FullStackModelStoreContainer" CdmEntityContainer="FullStackEntities1">
+    <EntitySetMapping Name="Quotes">
+      <EntityTypeMapping TypeName="FullStackModel.Quote">
+        <MappingFragment StoreEntitySet="Quotes">
+          <ScalarProperty Name="QuoteId" ColumnName="QuoteId" />
+          <ScalarProperty Name="QuoteType" ColumnName="QuoteType" />
+          <ScalarProperty Name="SalesPerson" ColumnName="SalesPerson" />
+          <ScalarProperty Name="PremiumAmount" ColumnName="PremiumAmount" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="FullStackModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ConfirmedPassword" ColumnName="ConfirmedPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
